@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
+import MainBanner from "../../shared-components/MainBanner/MainBanner"
+import CardMatter from "../../shared-components/Cardmatter/CardMatter"
+import styled from "styled-components"
+
+const CardLabel = styled.div``
 
 const Home = () => {
-    return (
-        <div>
-            je suis la page d'accueil
-        </div>
-    );
+  return (
+    <>
+      <MainBanner />
+      <CardMatter />
+    </>
+  )
 }
 
-export default Home;
-
+export default Home

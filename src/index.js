@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/Home";
 import Onboarding from "./pages/Onboarding/Onboarding";
 import ProfilClasse from "./pages/ProfilClasse/ProfilClasse";
+import Profil from "./pages/Profil/Profil";
+import Login from "./pages/Login/Login";
 import Error from "./pages/Error";
 
 ReactDOM.render(
@@ -13,6 +15,8 @@ ReactDOM.render(
         <Routes>
           <Route exact path="/" element={<Onboarding/>}/>
           <Route exact path="/profil" element={<ProfilClasse/>}/>
+          <Route exact path="/profil2" element={<Profil/>}/>
+          <Route exact path="/login" element={<Login/>}/>
           <Route exact path="/home" element={<Home/>}/>
           <Route path="*" element={<Error/>}/>
         </Routes>
