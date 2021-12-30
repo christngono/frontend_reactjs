@@ -8,6 +8,12 @@ import ProfilClasse from "./pages/ProfilClasse/ProfilClasse";
 import Profil from "./pages/Profil/Profil";
 import Login from "./pages/Login/Login";
 import Error from "./pages/Error";
+import Live from "./pages/Live/Live";
+import Apropos from "./pages/Apropos/Apropos";
+import Reviser from "./pages/Reviser/Reviser"
+import Matter from "./pages/Matter/Matter";
+import Courses from "./pages/Courses/Courses"
+import Lessons from "./pages/Lessons/Lessons"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +23,14 @@ ReactDOM.render(
           <Route exact path="/profil" element={<ProfilClasse/>}/>
           <Route exact path="/profil2" element={<Profil/>}/>
           <Route exact path="/login" element={<Login/>}/>
-          <Route exact path="/home" element={<Home/>}/>
+          <Route exact path="/enseignements" element={<Home/>}/>
+          <Route exact path="/enseignements/:matiere" element={<Matter/>}/>
+          <Route exact path="/enseignements/:matiere/:name_course" element={<Courses/>}/>
+          <Route exact path="/enseignements/:matiere/:name_course/:type_course" element={<Lessons/>}/>
+          <Route exact path="/reviser/" element={<Reviser/>}/>
+          <Route exact path="/live/" element={<Live/>}/>
+          <Route exact path="/apropos/" element={<Apropos/>}/>
+          
           <Route path="*" element={<Error/>}/>
         </Routes>
     </Router>
