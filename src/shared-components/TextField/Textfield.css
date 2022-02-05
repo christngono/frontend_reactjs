@@ -1,0 +1,10 @@
+.form-control {
+  height: 41px;
+  top: 373px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.966) !important;
+  font-size: 26px !important;
+}

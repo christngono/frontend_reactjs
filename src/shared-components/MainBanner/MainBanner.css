@@ -1,0 +1,63 @@
+
+.navbar-collapse {
+flex-basis: 100%;
+flex-grow: 0 !important;
+align-items: center;}
+
+.bg-color {
+background-color: #fff !important;
+border-bottom:2px solid #e5e5e5;
+}
+
+.breadcrumb{
+margin-top:30px;
+padding:10px 20px;
+border-radius:20px;
+color: #3c3c3c;
+cursor: pointer;
+font-size: 16px;
+font-weight: 800;
+letter-spacing: .8px;
+text-transform: uppercase;
+transition: filter .2s;
+
+}
+.wrap-body{
+margin-top:30px;
+}
+.nav-link > img{
+    padding:3px;
+}
+/*.profil-rounded{
+   display: inline-block;
+   height:45px;
+   width: 45px;
+   border:1px solid #ccc;
+   border-radius: 100%;
+   background-image: url('../images/fille-mere.svg'); 
+   background-size: cover;
+}*/
+
+.el-class{
+    margin-top:70px;
+}
+
+.elt-menu{
+    color: #afafaf;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    transition: filter .2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.3rem;
+    padding-left: .5rem;
+}
+}

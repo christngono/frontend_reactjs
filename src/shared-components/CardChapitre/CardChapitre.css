@@ -1,0 +1,31 @@
+.card_lesson {
+  border: solid #e5e5e5;
+  border-radius: 12px;
+  border-width: 2px 2px 4px;
+  cursor: pointer;
+  outline: 0;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #505050;
+}
+.card_lesson:hover {
+  background-color: #ddf4ff;
+  color: #1899d6;
+  border-color: rgba(14, 153, 214, 0.5);
+}
+.rod {
+  border-radius: 30px;
+}
+.rot {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 30px;
+  color: #1899d6;
+  display: inline-block;
+  text-align: center;
+}
