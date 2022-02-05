@@ -1,0 +1,19 @@
+.badge1 {
+  background-color: #ebad02;
+  color: #fff;
+  padding: 3px 8px;
+}
+.rod {
+  border-radius: 30px;
+}
+.title-lesson {
+  color: #505050;
+  font-size: 1.5em;
+  font-size: bold;
+  line-height: 1.4;
+}
+.lien-cour {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3c3c3c;
+}

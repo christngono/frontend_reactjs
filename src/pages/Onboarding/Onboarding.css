@@ -1,0 +1,88 @@
+html,
+body,
+.contain-block,
+.container-fluid {
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+}
+.container-bb {
+  height: 90%;
+}
+.container-bb .row {
+  height: 100%;
+}
+nav {
+  height: 10%;
+}
+.block-r,
+.block-l {
+  height: 100%;
+}
+
+.block-l {
+  color: #fff;
+  background-color: #235390;
+}
+
+.num {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button-action {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background: #58cc02;
+  border-radius: 15px;
+  box-shadow: 0px 7px 0 0 #58a700;
+  font-size: 1.2rem;
+}
+
+.button-action-nof {
+  padding: 10px;
+  border: 3px solid #58cc02;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-top: 15px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.link-footer > a {
+  padding: 5px;
+  color: #222 !important;
+}
+
+/** page d'inscription **/
+
+.menu-nav {
+  border-bottom: 2px solid #ccc;
+}
+.b1 {
+  color: #222;
+  background-color: #fff !important;
+}
+
+.b2 {
+  background-color: #235390;
+}
+.cow {
+  color: #fff !important;
+}
+.cob {
+  color: #222 !important;
+}
