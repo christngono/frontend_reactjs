@@ -9,10 +9,9 @@ const Profil = () => {
   var backgroundStyle = {
     backgroundColor: "#235390",
     fonFamily: "'Nunito Sans', sans-serif",
-    backgroundPosition: "bottom -50px right 150px",
-    backgroundRepeat: "no-repeat",
-    height: "100vh",
-    backgroundImage: `url(require("./etoile.svg"))`,
+    height: "850px",
+    backgroundImage: `url("/background.svg")`,
+    backgroundPositionY: "bottom",
   }
   const navigate = useNavigate()
   const [visibility, setVisibility] = useState(false)
@@ -35,25 +34,37 @@ const Profil = () => {
             </h2>
           </div>
 
-          <div className="col-lg-3 col-8 ">
+          <div className="col-lg-3 col-12 ">
             <div className="row justify-content-around">
               <div
-                className="select-clas "
+                className="col-1 select-clas "
                 onClick={() => setVisibility(!visibility)}
               >
                 <span>3eme</span>
               </div>
               <div
-                className="select-clas "
+                className="col-1 select-clas "
                 onClick={() => setVisibility(!visibility)}
               >
-                <span>1ere</span>
+                <span>1ereC</span>
               </div>
               <div
-                className="select-clas "
+                className="col-1 select-clas "
                 onClick={() => setVisibility(!visibility)}
               >
-                <span>Tle</span>
+                <span>1ereD</span>
+              </div>
+              <div
+                className="col-2 select-clas "
+                onClick={() => setVisibility(!visibility)}
+              >
+                <span>1ereA</span>
+              </div>
+              <div
+                className="col-3 select-clas "
+                onClick={() => setVisibility(!visibility)}
+              >
+                <span>Tle A</span>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
-import React from "react";
-import "./Offer.css";
-import ProgressBar from "../../shared-components/ProgressBar/ProgressBar";
-import Cart from "../../shared-components/Cart/Cart";
-import CloseButt from "../../shared-components/CloseButt/CloseButt";
+import React from "react"
+import "./Offer.css"
+import ProgressBar from "../../shared-components/ProgressBar/ProgressBar"
+import Cart from "../../shared-components/Cart/Cart"
+import CloseButt from "../../shared-components/CloseButt/CloseButt"
 
 const Offer = () => {
   return (
@@ -41,7 +41,7 @@ const Offer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Offer;
+export default Offer

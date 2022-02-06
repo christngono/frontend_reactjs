@@ -5,9 +5,8 @@ import CardMatter from "../../shared-components/CardMatter/CardMatter"
 import styled from "styled-components"
 import ProgressBar from "../../shared-components/ProgressBar/ProgressBar"
 import { Icone } from "../../Data/Icone"
-
-import { NavLink } from "react-router-dom"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import Footer from "../../shared-components/Footer/Footer"
 
 const BlockMatter = styled.div`
   border: solid #e5e5e5;
@@ -19,10 +18,13 @@ const BlockMatter = styled.div`
   transform: translateZ(0);
   margin-top: 20px;
 `
-const clickMatter = styled.link`
+
+const StyledLink = styled(Link)`
   display: block;
+  text-decoration: none;
 `
 const Home = () => {
+  const navigate = useNavigate()
   return (
     <>
       <MainBanner />
@@ -34,18 +36,33 @@ const Home = () => {
           <ProgressBar />
         </div>
         <BlockMatter className="row mt-3">
-          <CardMatter
-            to="/profil2"
-            image={Icone.philo}
-            matter={"Philosophie"}
-          />
-          <CardMatter image={Icone.svt} matter={"Mathématique"} />
-          <CardMatter image={Icone.physique} matter={"Physique"} />
-          <CardMatter image={Icone.svt} matter={"Science"} />
-          <CardMatter image={Icone.french} matter={"Français"} />
-          <CardMatter image={Icone.anglais} matter={"Anglais"} />
+          <StyledLink
+            to="/enseignements/philosophie"
+            className="col-md-3 col-4"
+          >
+            <CardMatter image={Icone.philo} matter={"Philosophie"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/:typecourse"
+            className="col-md-3 col-4"
+          >
+            <CardMatter image={Icone.maths} matter={"Mathématique"} />
+          </StyledLink>
+          <StyledLink to="/enseignements/Physique" className="col-md-3 col-4">
+            <CardMatter image={Icone.physique} matter={"Physique"} />
+          </StyledLink>
+          <StyledLink to="/enseignements/Anglais" className="col-md-3 col-4">
+            <CardMatter image={Icone.anglais} matter={"Anglais"} />
+          </StyledLink>
+          <StyledLink to="/enseignements/Francais/" className="col-md-3 col-4">
+            <CardMatter image={Icone.french} matter={"Français"} />
+          </StyledLink>
+          <StyledLink to="/enseignements/Science/" className="col-md-3 col-4">
+            <CardMatter image={Icone.svt} matter={"Science"} />
+          </StyledLink>
         </BlockMatter>
       </div>
+      <Footer />
     </>
   )
 }

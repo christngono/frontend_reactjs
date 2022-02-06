@@ -3,12 +3,12 @@ import "./CardProfil.css"
 
 const CardProfil = ({ link, nameProfil, onClick }) => {
   return (
-    <div className=" col-4 card-profil align-middle " onClick={onClick}>
-      <div className="select-img">
-        <img src={link} height="100" alt="" />
-      </div>
-      <div className="name text-center ">
-        <p>{nameProfil}</p>
+    <div className="col-md-2 col-4" onClick={onClick}>
+      <div class="card" style={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
+        <img src={link} class="card-img-top" height="100px" alt="profil" />
+        <div class="card-body">
+          <p class="card-text">{nameProfil}</p>
+        </div>
       </div>
     </div>
   )

@@ -2,9 +2,9 @@ import React from "react"
 import "./CardMatter.css"
 import { Link } from "react-router-dom"
 
-function CardMatter({ matter, image, onClick }) {
+function CardMatter({ matter, image }) {
   return (
-    <div className="col-md-3 col-4  card-matter " onClick={onClick}>
+    <div className="card-matter ">
       <div className="">
         <div className="matter-body">
           <div className="matter-img">

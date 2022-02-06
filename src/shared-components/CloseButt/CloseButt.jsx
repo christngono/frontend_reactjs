@@ -1,10 +1,13 @@
-import React from "react";
-import Close from "../../assets/Vectorclose.svg";
+import React from "react"
+import { Icone } from "../../Data/Icone"
+import "./CloseButt.css"
 
 export default function CloseButt() {
   return (
     <div>
-      <img src={Close} />
+      <span className="closeButt">
+        <img src={Icone.closed} height="30" />
+      </span>
     </div>
-  );
+  )
 }

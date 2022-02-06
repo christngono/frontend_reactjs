@@ -11,7 +11,7 @@ const Connexion = () => {
     <>
       <div className="row">
         <div className="col-md-1">
-          <img src="{{Icone.closed}}" alt="" />
+          <span>X</span>
         </div>
         <div className="col-md-3">
           <p>694744292</p>

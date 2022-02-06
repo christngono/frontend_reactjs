@@ -8,7 +8,6 @@ import ProfilClasse from "./pages/ProfilClasse/ProfilClasse";
 import Profil from "./pages/Profil/Profil";
 import Login from "./pages/Login/Login";
 import Error from "./pages/Error";
-import Message from "./pages/Message/Message";
 import Video from "./pages/Video/Video";
 import Quiz from "./pages/Quiz/Quiz";
 import Apropos from "./pages/Apropos/Apropos";
@@ -17,8 +16,8 @@ import Matter from "./pages/Matter/Matter";
 import Courses from "./pages/Courses/Courses"
 import Lessons from "./pages/Lessons/Lessons"
 import Connexion from "./pages/Connexion/Connexion"
-import Offers from "./pages/Offers/Offers"
-import ObjectifPedagogique from "./pages/ObjectifPedagogique/ObjectifPedagogique"
+import Offers from "./pages/Offers/Offer"
+import ObjectifPedagogique from "./pages/ObjectifPedagogik/ObjectifPedagogik"
 
 import AppContextProvider from "./ApiContext"
 
@@ -34,9 +33,9 @@ ReactDOM.render(
           <Route exact path="/enseignements" element={<Home/>}/>
           <Route exact path="/enseignements/:matiere" element={<Matter/>}/>
           <Route exact path="/enseignements/:matiere/:typecourse" element={<Lessons/>}/>
-          <Route exact path="/enseignements/:matiere/course/:course" element={<Courses/>}/>
-          <Route exact path="/enseignements/:matiere/video/:video" element={<Video/>}/>
-          <Route exact path="/enseignements/:matiere/quiz/:quiz" element={<Quiz/>}/>
+          <Route exact path="/enseignements/:matiere/course/:namecourse" element={<Courses/>}/>
+          <Route exact path="/enseignements/:matiere/video/:namevideo" element={<Video/>}/>
+          <Route exact path="/enseignements/:matiere/quiz/:namequiz" element={<Quiz/>}/>
           <Route exact path="/connexion/" element={<Connexion/>}/>
           <Route exact path="/reviser/" element={<Reviser/>}/>
           <Route exact path="/offers/" element={<Offers/>}/>

@@ -4,6 +4,7 @@ import MainBanner from "../../shared-components/MainBanner/MainBanner"
 import CardChapitre from "../../shared-components/CardChapitre/CardChapitre"
 import { Icone } from "../../Data/Icone"
 import "./Matter.css"
+import { Link, useNavigate } from "react-router-dom"
 import Footer from "../../shared-components/Footer/Footer"
 
 const BlockMatter = styled.div`
@@ -15,6 +16,10 @@ const BlockMatter = styled.div`
   touch-action: manipulation;
   transform: translateZ(0);
   padding: 50px 10px 100px 10px;
+`
+const StyledLink = styled(Link)`
+  display: block;
+  text-decoration: none;
 `
 
 function Matter() {
@@ -38,15 +43,66 @@ function Matter() {
             {" "}
             <span className="badge1 rod">Leçons</span>
           </div>
-          <CardChapitre num={1} name_lesson={"Inequation et inéquation"} />
-          <CardChapitre num={2} name_lesson={"Trigonometrie"} />
-          <CardChapitre num={3} name_lesson={"Fonction numérique"} />
-          <CardChapitre num={4} name_lesson={"Limites et continuité"} />
-          <CardChapitre num={5} name_lesson={"Dérivation"} />
-          <CardChapitre num={6} name_lesson={"Suites numérique"} />
-          <CardChapitre num={7} name_lesson={"Arithmétique"} />
-          <CardChapitre num={8} name_lesson={"Statistique"} />
-          <CardChapitre num={9} name_lesson={"Dénombrement"} />
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={1} name_lesson={"Inequation et inéquation"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={2} name_lesson={"Trigonometrie"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={3} name_lesson={"Limites et continuité"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={4} name_lesson={"Fonction numérique"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={5} name_lesson={"Fonction numérique"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={6} name_lesson={"Dérivation"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={7} name_lesson={"Suites numérique"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={8} name_lesson={"Arithmétique"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={9} name_lesson={"Statistique"} />
+          </StyledLink>
+          <StyledLink
+            to="/enseignements/mathémqatique/typecourse"
+            className="col-md-7"
+          >
+            <CardChapitre num={10} name_lesson={"Dénombrement"} />
+          </StyledLink>
         </BlockMatter>
         <Footer />
       </div>

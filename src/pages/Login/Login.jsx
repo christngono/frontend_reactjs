@@ -1,6 +1,6 @@
 import { useState, React } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./Login.css"
+import "./Login.scoped.css"
 import ButtonAction from "../../shared-components/ButtonAction/ButtonAction"
 import BannerSimple from "../../shared-components/BannerSimple/BannerSimple"
 import TextField from "../../shared-components/TextField/TextField"
@@ -14,6 +14,7 @@ const Login = () => {
     fonFamily: "'Nunito Sans', sans-serif",
     backgroundPosition: "bottom -50px right 150px",
     backgroundRepeat: "no-repeat",
+    display: "block",
     height: "100vh",
     backgroundImage: `url(require("../../etoile.svg"))`,
   }
@@ -21,9 +22,15 @@ const Login = () => {
   const navigate = useNavigate()
 
   return (
-    <div style={backgroundStyle}>
+    <div
+      className=""
+      style={{
+        backgroundImage: `url("/background.svg")`,
+        backgroundPositionY: "bottom",
+        height: "850px",
+      }}
+    >
       <BannerSimple />
-
       <div className="container">
         <div className="row d-flex justify-content-around">
           <div className="col-md-12 col-sm-12 title-crea text-center pt-3">

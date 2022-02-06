@@ -6,7 +6,7 @@ import { Icone } from "../../Data/Icone"
 function MainBanner() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-color">
+      <div className="navbar navbar-expand-lg navbar-light bg-color">
         <div className="container">
           <a
             className="navbar-brand"
@@ -34,7 +34,7 @@ function MainBanner() {
               </Link>
               <Link className="nav-link elt-menu" to="/reviser">
                 <img src={Icone.revision} height="40" />
-                <span className="align-middle"> Reviser</span>
+                <span className="align-middle"> S'entrainer</span>
               </Link>
               <Link className="nav-link elt-menu" to="/Message">
                 <img src={Icone.message} height="40" />
@@ -46,6 +46,7 @@ function MainBanner() {
               </Link>
               <Link className="nav-link elt-menu" to="/live">
                 <img src={Icone.defaultavatar} height="50" />
+                <span className="align-middle">Christian</span>
               </Link>
               <a
                 className="nav-link profil-rounded"
@@ -55,7 +56,7 @@ function MainBanner() {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </>
   )
 }

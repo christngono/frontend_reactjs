@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import "./ObjectifPedagogik.css";
-import CloseButt from "../../shared-components/CloseButt/CloseButt";
-import ProgressBar from "../../shared-components/ProgressBar/ProgressBar";
-import { useHistory } from "react-router";
+import React, { useState } from "react"
+import "./ObjectifPedagogik.css"
+import CloseButt from "../../shared-components/CloseButt/CloseButt"
+import ProgressBar from "../../shared-components/ProgressBar/ProgressBar"
+// import { useHistory } from "react-router";
 
 export default function ObjectifPedagogik() {
-  const history = useHistory();
+  // const history = useHistory();
   const data = [
     {
       id: 0,
@@ -25,9 +25,9 @@ export default function ObjectifPedagogik() {
       item: "item-3",
       content: "Comprendre une notion précise",
     },
-  ];
+  ]
 
-  const [clicked, setClicked] = useState(0);
+  const [clicked, setClicked] = useState(0)
 
   return (
     <div className="container">
@@ -69,12 +69,12 @@ export default function ObjectifPedagogik() {
           </div>
         ))}
         <div
-          onClick={() => history.push("/offer")}
+          //onClick={() => history.push("/offer")}
           className={"w-100 mt-5 continuer"}
         >
           Continuer
         </div>
       </div>
     </div>
-  );
+  )
 }

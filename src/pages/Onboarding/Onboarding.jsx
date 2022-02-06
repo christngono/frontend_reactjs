@@ -2,7 +2,7 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./Onboarding.css"
 import ButtonAction from "../../shared-components/ButtonAction/ButtonAction"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function Onboarding() {
   var backgroundStyle = {
@@ -13,17 +13,19 @@ function Onboarding() {
     height: "100vh",
     backgroundImage: `url(require("./etoile.svg"))`,
   }
-  const navigate = useNavigate()
+  const history = useNavigate()
   return (
     <div style={backgroundStyle}>
-      <div className="bg-white px-5 py-2">
+      <div className="bg-white px-1 py-2">
         <div className="row d-flex justify-content-between">
-          <div className="col-md-6 col-6">
-            <img src="./logo-lasylab.png" height="60" alt="" />
+          <div className="col-md-6 col-1">
+            <img src="./logo-lasylab.png" height="50" alt="" />
           </div>
-          <div className="col-md-6 col-6 text-end">
+          <div className="col-md-6 col-10 text-end">
             {" "}
-            <p className="num text-end"> 6 94 74 42 92 </p>
+            <p className="num text-end">
+              <span>Infos: </span> 6 77 51 88 62{" "}
+            </p>
           </div>
         </div>
       </div>
@@ -41,11 +43,12 @@ function Onboarding() {
                   src="../image-acceuil.svg"
                   alt="image-presentation"
                   height="220"
+                  className="img-fluid mx-auto d-block"
                 />
               </div>
               <div className="col-lg-6  col-md-8 col-10 d-block d-sm-none mt-5">
                 <ButtonAction
-                  onClick={() => navigate("/profil")}
+                  onClick={() => history("/profil")}
                   text="C'est partie😀"
                 />
                 <a href="/discution" class="button-action-nof cob">
@@ -64,12 +67,12 @@ function Onboarding() {
           <div className="col-lg-6 b2 d-none d-sm-block ">
             <div className="row d-flex justify-content-around">
               <div className="col-lg-7 text-center col-md-8 col-12 align-self-center cow">
-                <h3>Tout pour réussir</h3>
+                <h3 class="cow">Tout pour réussir</h3>
                 <p>Revise et apprend facilement tes leçons de la 6e en Tle</p>
               </div>
               <div className="col-lg-6  col-md-8 col-12">
                 <ButtonAction
-                  onClick={() => navigate("/profil")}
+                  onClick={() => history("/profil")}
                   text="C'est partie😀"
                 />
                 <a href="/discution" class="button-action-nof">
