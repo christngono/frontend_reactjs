@@ -18,18 +18,12 @@ const Login = () => {
     height: "100vh",
     backgroundImage: `url(require("../../etoile.svg"))`,
   }
+
   const [startDate, setStartDate] = useState(new Date())
   const navigate = useNavigate()
 
   return (
-    <div
-      className=""
-      style={{
-        backgroundImage: `url("/background.svg")`,
-        backgroundPositionY: "bottom",
-        height: "850px",
-      }}
-    >
+    <Colorbody style={styles}>
       <BannerSimple />
       <div className="container">
         <div className="row d-flex justify-content-around">
@@ -60,7 +54,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Colorbody>
   )
 }
 

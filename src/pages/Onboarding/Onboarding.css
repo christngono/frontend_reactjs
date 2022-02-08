@@ -2,7 +2,6 @@ html,
 body,
 .contain-block,
 .container-fluid {
-  height: 100%;
   font-family: "Nunito Sans", sans-serif;
 }
 .container-bb {

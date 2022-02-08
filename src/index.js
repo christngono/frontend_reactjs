@@ -20,6 +20,7 @@ import Offers from "./pages/Offers/Offer"
 import ObjectifPedagogique from "./pages/ObjectifPedagogik/ObjectifPedagogik"
 
 import AppContextProvider from "./ApiContext"
+import Displaylesson from "./pages/DisplayLesson/DisplayLesson";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -33,7 +34,7 @@ ReactDOM.render(
           <Route exact path="/enseignements" element={<Home/>}/>
           <Route exact path="/enseignements/:matiere" element={<Matter/>}/>
           <Route exact path="/enseignements/:matiere/:typecourse" element={<Lessons/>}/>
-          <Route exact path="/enseignements/:matiere/course/:namecourse" element={<Courses/>}/>
+          <Route exact path="/enseignements/:matiere/course/:namecourse" element={<Displaylesson/>}/>
           <Route exact path="/enseignements/:matiere/video/:namevideo" element={<Video/>}/>
           <Route exact path="/enseignements/:matiere/quiz/:namequiz" element={<Quiz/>}/>
           <Route exact path="/connexion/" element={<Connexion/>}/>
