@@ -23,7 +23,13 @@ const Login = () => {
   const navigate = useNavigate()
 
   return (
-    <Colorbody style={styles}>
+    <div
+      style={{
+        backgroundImage: `url("/background.svg")`,
+        backgroundPositionY: "bottom",
+        height: "850px",
+      }}
+    >
       <BannerSimple />
       <div className="container">
         <div className="row d-flex justify-content-around">
@@ -54,7 +60,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </Colorbody>
+    </div>
   )
 }
 
