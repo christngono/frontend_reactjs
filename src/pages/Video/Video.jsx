@@ -13,13 +13,14 @@ const BlockMatter = styled.div`
   border-width: 2px 2px 4px;
   cursor: pointer;
   outline: 0;
+  background-color: #fff;
   touch-action: manipulation;
   transform: translateZ(0);
   margin-top: 20px;
 `
 const Video = () => {
   return (
-    <div>
+    <div className="color-fond">
       <div className="container py-2">
         <div className="row text-end ">
           <CloseButt style={{ height: "50" }} />

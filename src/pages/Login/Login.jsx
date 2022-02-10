@@ -15,21 +15,14 @@ const Login = () => {
     backgroundPosition: "bottom -50px right 150px",
     backgroundRepeat: "no-repeat",
     display: "block",
-    height: "100vh",
-    backgroundImage: `url(require("../../etoile.svg"))`,
+    backgroundImage: `url(require(".etoile.svg"))`,
   }
 
   const [startDate, setStartDate] = useState(new Date())
   const navigate = useNavigate()
 
   return (
-    <div
-      style={{
-        backgroundImage: `url("/background.svg")`,
-        backgroundPositionY: "bottom",
-        height: "850px",
-      }}
-    >
+    <div className="container-fluid" style={backgroundStyle}>
       <BannerSimple />
       <div className="container">
         <div className="row d-flex justify-content-around">

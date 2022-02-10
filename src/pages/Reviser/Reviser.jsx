@@ -11,6 +11,7 @@ const BlockMatter = styled.div`
   border-radius: 12px;
   border-width: 2px 2px 4px;
   cursor: pointer;
+  background-color: #fff;
   outline: 0;
   touch-action: manipulation;
   transform: translateZ(0);
@@ -18,7 +19,7 @@ const BlockMatter = styled.div`
 `
 function Reviser() {
   return (
-    <>
+    <div className="container-fluid color-fond">
       <MainBanner />
       <BlockMatter className="container py-5 mb-5">
         <p className="title-v px-2 py-2">Entraînez-vous</p>
@@ -40,7 +41,7 @@ function Reviser() {
           />
         </div>
       </BlockMatter>
-    </>
+    </div>
   )
 }
 

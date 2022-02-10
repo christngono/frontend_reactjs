@@ -14,6 +14,7 @@ const BlockMatter = styled.div`
   border-width: 2px 2px 4px;
   cursor: pointer;
   outline: 0;
+  background-color: #fff;
   touch-action: manipulation;
   transform: translateZ(0);
 `
@@ -25,9 +26,9 @@ const StyledLink = styled(Link)`
 const Lessons = () => {
   const navigate = useNavigate()
   return (
-    <>
+    <div className="color-fond container-fluid">
       <MainBanner />
-      <div className="row pt-5">
+      <div className="row pt-2">
         <div className="col-md-3 offset-md-1">
           <p className="lien-cour">
             <img src={Icone.next} height="30" alt="next" />
@@ -101,7 +102,7 @@ const Lessons = () => {
         </BlockMatter>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 

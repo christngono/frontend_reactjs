@@ -10,15 +10,17 @@ const Profilclasse = () => {
   var backgroundStyle = {
     backgroundColor: "#235390",
     fonFamily: "'Nunito Sans', sans-serif",
-    height: "850px",
-    backgroundImage: `url("/background.svg")`,
-    backgroundPositionY: "bottom",
+    backgroundPosition: "bottom -50px right 150px",
+    backgroundRepeat: "no-repeat",
+    height: "100vh",
+    backgroundImage: `url(require("../../etoile.svg"))`,
   }
+
   const navigate = useNavigate()
   const [visibility, setVisibility] = useState(false)
 
   return (
-    <div className="" style={backgroundStyle}>
+    <div className="container-fluid" style={backgroundStyle}>
       <BannerSimple />
 
       <div className="container">

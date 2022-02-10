@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <>
-      <div className="row py-5">
+      <div className="row py-3">
         <div className="col-md-12 text-center lien">
           <a to={"/apropos"}>Aide</a>
           <a to={"/apropos"}>A propos de nous</a>

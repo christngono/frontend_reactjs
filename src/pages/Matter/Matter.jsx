@@ -13,6 +13,7 @@ const BlockMatter = styled.div`
   border-width: 2px 2px 4px;
   cursor: pointer;
   outline: 0;
+  background-color: #fff;
   touch-action: manipulation;
   transform: translateZ(0);
   padding: 50px 10px 100px 10px;
@@ -24,7 +25,7 @@ const StyledLink = styled(Link)`
 
 function Matter() {
   return (
-    <>
+    <div div className="color-fond">
       <MainBanner />
       <div
         className="text-center"
@@ -106,7 +107,7 @@ function Matter() {
         </BlockMatter>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 

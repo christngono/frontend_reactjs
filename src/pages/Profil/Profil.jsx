@@ -9,10 +9,13 @@ const Profil = () => {
   var backgroundStyle = {
     backgroundColor: "#235390",
     fonFamily: "'Nunito Sans', sans-serif",
-    height: "850px",
-    backgroundImage: `url("/background.svg")`,
-    backgroundPositionY: "bottom",
+    backgroundPosition: "bottom -50px right 150px",
+    backgroundRepeat: "no-repeat",
+    display: "block",
+    height: "100vh",
+    backgroundImage: `url(require("../../etoile.svg"))`,
   }
+
   const navigate = useNavigate()
   const [visibility, setVisibility] = useState(false)
 
@@ -23,7 +26,7 @@ const Profil = () => {
   }
 
   return (
-    <div className="" style={backgroundStyle}>
+    <div className="container-fluid" style={backgroundStyle}>
       <BannerSimple />
 
       <div className="container">
@@ -35,7 +38,7 @@ const Profil = () => {
           </div>
 
           <div className="col-lg-3 col-12 ">
-            <div className="row justify-content-around">
+            <div className="row">
               <div
                 className="col-1 select-clas "
                 onClick={() => setVisibility(!visibility)}
@@ -55,13 +58,13 @@ const Profil = () => {
                 <span>1ereD</span>
               </div>
               <div
-                className="col-2 select-clas "
+                className="col-1 select-clas "
                 onClick={() => setVisibility(!visibility)}
               >
                 <span>1ereA</span>
               </div>
               <div
-                className="col-3 select-clas "
+                className="col-1 select-clas "
                 onClick={() => setVisibility(!visibility)}
               >
                 <span>Tle A</span>
