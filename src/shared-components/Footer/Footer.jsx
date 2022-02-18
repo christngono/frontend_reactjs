@@ -7,9 +7,9 @@ const Footer = () => {
     <>
       <div className="row py-3">
         <div className="col-md-12 text-center lien">
-          <a to={"/apropos"}>Aide</a>
-          <a to={"/apropos"}>A propos de nous</a>
-          <a to={"/apropos"}>Contacts</a>
+          <Link to="/apropos">Aide</Link>
+          <Link to="/apropos">A propos de nous</Link>
+          <Link to="/apropos">Contacts</Link>
         </div>
         <div className="col-md-12 text-center">
           <a>2022 lasylab</a>

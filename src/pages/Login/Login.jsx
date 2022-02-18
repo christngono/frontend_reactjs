@@ -15,7 +15,7 @@ const Login = () => {
     backgroundPosition: "bottom -50px right 150px",
     backgroundRepeat: "no-repeat",
     display: "block",
-    backgroundImage: `url(require(".etoile.svg"))`,
+    backgroundImage: `url(require("etoile.svg"))`,
   }
 
   const [startDate, setStartDate] = useState(new Date())

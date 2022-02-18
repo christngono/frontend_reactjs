@@ -31,11 +31,13 @@ const Home = () => {
     <div className="color-fond container-fluid">
       <MainBanner />
       <div className="container ">
-        <div class="row justify-content-md-center mb-3">
+        <div class="row justify-content-md-center mb-2">
           <div class="col-md-12  el-class">
             <h3 class="text-center">Première</h3>
           </div>
-          <ProgressBar />
+          <div className="col-6 py-2">
+            <ProgressBar />
+          </div>
         </div>
         <BlockMatter className="row mt-3">
           <StyledLink

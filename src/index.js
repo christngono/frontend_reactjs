@@ -19,7 +19,7 @@ import Lessons from "./pages/Lessons/Lessons"
 import Connexion from "./pages/Connexion/Connexion"
 import Offers from "./pages/Offers/Offer"
 import ObjectifPedagogique from "./pages/ObjectifPedagogik/ObjectifPedagogik"
-
+import Compte from "./pages/Compte/Compte"
 import AppContextProvider from "./ApiContext"
 import Displaylesson from "./pages/DisplayLesson/DisplayLesson";
 
@@ -41,6 +41,7 @@ ReactDOM.render(
           <Route exact path="/connexion/" element={<Connexion/>}/>
           <Route exact path="/reviser/" element={<Reviser/>}/>
           <Route exact path="/offers/" element={<Offers/>}/>
+          <Route exact path="/compte/" element={<Compte/>}/>
           <Route exact path="/apropos/" element={<Apropos/>}/>
           <Route exact path="/objectifpedagogique/" element={<ObjectifPedagogique/>}/>
          

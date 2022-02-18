@@ -4,8 +4,8 @@ import "./CloseButt.css"
 
 export default function CloseButt() {
   return (
-    <div>
-      <span className="closeButt">
+    <div className="col-md-2 col-2">
+      <span className="closeButt ">
         <img src={Icone.closed} height="30" />
       </span>
     </div>

@@ -4,8 +4,8 @@ function Error() {
   return (
     <>
       <MainBanner />
-      <div className="row">
-        <div className="col text-align center">
+      <div className="row d-flex justify-content-center align-items-center">
+        <div className="col text-align-center ">
           <h1> Oup 🙈la page n'existe pas !</h1>
         </div>
       </div>

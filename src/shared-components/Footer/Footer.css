@@ -1,3 +1,16 @@
-.lien a {
+.lien > a {
   padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.lien > a:hover {
+  color: #1cb0f6;
+}
+a:hover {
+  color: #1cb0f6;
+}
+.name {
+  font-size: 1.3rem;
+  font-weight: bold;
 }

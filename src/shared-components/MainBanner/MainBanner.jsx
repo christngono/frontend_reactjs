@@ -28,7 +28,10 @@ function MainBanner() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link className="nav-link elt-menu align-middle" to="/apprendre">
+              <Link
+                className="nav-link elt-menu align-middle"
+                to="/enseignements"
+              >
                 <img src={Icone.learning} height="40" />
                 <span className="align-middle"> Apprendre</span>
               </Link>
@@ -44,7 +47,7 @@ function MainBanner() {
                 <img src={Icone.rubit} height="30" />
                 <span className="align-middle">2</span>
               </Link>
-              <Link className="nav-link elt-menu" to="/live">
+              <Link className="nav-link elt-menu" to="/compte">
                 <img src={Icone.defaultavatar} height="50" />
                 <span className="align-middle">Christian</span>
               </Link>

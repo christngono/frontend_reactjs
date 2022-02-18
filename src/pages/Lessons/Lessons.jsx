@@ -73,7 +73,7 @@ const Lessons = () => {
               <CardMatter image={Icone.video} matter={"Vidéo"} />
             </StyledLink>
             <StyledLink
-              to="/enseignements/matiere/definition/mesdef"
+              to="/enseignements/matiere/course/moncours"
               className="col-md-3 col-4"
             >
               <CardMatter image={Icone.definitions} matter={"Définition"} />
@@ -87,7 +87,7 @@ const Lessons = () => {
             </StyledLink>
 
             <StyledLink
-              to="/enseignements/matiere/activite/mesmethode"
+              to="/enseignements/matiere/course/moncours"
               className="col-md-3 col-4"
             >
               <CardMatter image={Icone.activity} matter={"Méthodes"} />
